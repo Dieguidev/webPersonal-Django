@@ -2,9 +2,16 @@
 
 {% block title %}Acerca de{% endblock %}
 
-{% block content %}
+{% comment %} estan en linea debido a que no lo reconoce el dom  {% endcomment %}
+{% block background %}{% load static %}{% static 'core/img/about-bg.jpg'%}{% endblock  %}
+
+{% block headers %}
 <h2>Acerca de</h2>
-<p>Me llamo Diego y soy programador</p>
+<p>Me llamo Diego y soy Desarrollador Web</p>
+{% endblock %} 
+
+{% block content %}
+
 {% endblock %}
 
 

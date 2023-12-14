@@ -2,9 +2,16 @@
 
 {% block title %}Portafolio{% endblock %}
 
-{% block content %}
+{% comment %} estan en linea debido a que no lo reconoce el dom  {% endcomment %}
+{% block background %}{% load static %}{% static 'core/img/portfolio-bg.jpg'%}{% endblock  %}
+
+{% block headers %}
 <h2>Portafolio</h2>
 <p>Mis proyectos</p>
+{% endblock %} 
+
+{% block content %}
+
 {% endblock %}
 
 

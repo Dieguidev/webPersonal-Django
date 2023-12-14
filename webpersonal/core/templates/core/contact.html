@@ -2,9 +2,16 @@
 
 {% block title %}Contacto{% endblock %}
 
-{% block content %}
+{% comment %} estan en linea debido a que no lo reconoce el dom  {% endcomment %}
+{% block background %}{% load static %}{% static 'core/img/contact-bg.jpg'%}{% endblock  %}
+
+{% block headers %}
 <h2>Contacto</h2>
 <p>Escribeme a diegogaraycullas@gmail.com</p>
+{% endblock %} 
+
+{% block content %}
+
 {% endblock %}
 
 
